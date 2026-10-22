@@ -1,59 +1,51 @@
 <!DOCTYPE html>
-<html  >
-    <head>
-        <title>CLASE 1 CSS</title>  
-        <link rel="stylesheet" href="estilo.css" type="text/css" />
-	</style>
-
-    </head>
-    
-    <body>
-        <header>
-            <nav>
-                <li><a href="#title">INICIO</a></li>
-                <li><a href="#skills">HABILIDADES</a></li>
-                <li><a href="#learning">INFORMACION</a></li>
-            </nav>
-        </header>
-        
-        <h1 id="title">CURSOS HTML CSS JAVASCRIPT</h1>
-        
-        <article>
-        </article>
-            <p> la materia esta enfocada al conocimiento web de desarrollo web</p>
-            <a href="h1.pdf" upload="cronograma">Visualizar el contenido</a>
-        <ul> 
-            <li>creacion basica de html</li>
-            <li>diseño basico</li>
-            <li>elementos de jaavascript</li>
-        </ul>
-        
-
-        <ol>
-            <li>HTML</li> <a href=""> </a>
-            <p>
-                <acronym style="font-style: italic">html es una herramientra web de creacion</acronym>  
-            </p>
-            <li>CSS</li> <a href=""> </a>
-            <p>
-                <acronym style="font-style: italic"> css es una herramientra de estilos</acronym> 
-            </p>
-            <li>JAVA</li> <a href=""> </a>
-            <p>
-               <acronym style="font-style: italic">java es una herramientra de logica prog</acronym>  
-            </p>
-        </ol>
-    </body>
-    
-    <footer >
-        <h2>BIENVENIDO AL FORMULARIO</h2>
-        <form>
-            <h2>infomacion de las clases</h2>
-            <input type="text" name="nombre" placeholder="mijael" required>
-            <input type="text" name="apellido" placeholder="jorge" required>
-            <input type="email" name="correo" placeholder="ejemplo@gnail.com" required>
-            <input type="number" name="telefono" placeholder="66666666" ><br>
-            <input type="submit" value="enviar" >
-        </form>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="javascript.js"></script>
+</head>
+<body style="margin: 0; padding: 0;">
+    <header>
+        <nav>
+            <ul style="display: flex; list-style: none; justify-content: space-around;">
+                <li><a href="#title">Inicio</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#learning">Información</a></li>
+            </ul>
+        </nav> 
+    </header>
+    <main style="padding-top: 65px"> 
+    <h1 id="title">Curso Html-CSS-Javascript</h1>
+    </main>
+    <article>
+    <p>Curso enfocado a principiantes del desarrollo web</p>
+    <a href="Plan_estudio.pdf" upload="Cronograma">Visualizar acá el temario detallado</a>
+    </article>
+    <h3 id="skills">Habilidades que se aprenderán</h3>
+    <ul>
+        <li>Creación básica de un sitio web</li>
+        <li>Diseño básico</li>
+        <li>Elementos javascript</li>
+    </ul>
+    <h3 id="learning">Temario</h3>
+    <ol>
+        <li>HTML</li> <a target="_blank" href="https://es.wikipedia.org/wiki/HTML"><img src="html.svg" alt="logo html" width="300px" height="auto"></a> 
+        <li>CSS</li> <a target="_blank" href="https://es.wikipedia.org/wiki/CSS"> <img src="css.svg" alt="logo css" width="300px" height="auto"></a>
+        <li>JavaScript</li> <a target="_blank" href="https://es.wikipedia.org/wiki/JavaScript"> <img src="javascript.svg" alt="logo javascript" width="300px" height="auto"></a>
+    </ol>
+    <footer style="background-color: rgba(187, 183, 157, 0.566); border: 2px, solid, black; padding: 20px;">
+        <form action="">
+            <h2>¡Quiero información del curso!</h2>
+            <input class="inputs" type="text" name="nombre" placeholder="Ana Martinez" required>
+            <br>
+            <input class="inputs" type="email" name="correo" placeholder="ejemplo@outlook.com" required >
+            <br>
+            <input id="inputbuttom" type="submit" value="Enviar">            
+        </form>    
+    <a href="https://cursos.databoosters.mx/">Página principal</a>
     </footer>
+</body>
 </html>
