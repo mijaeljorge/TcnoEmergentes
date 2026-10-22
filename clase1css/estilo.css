@@ -1,13 +1,18 @@
+p { 
+    border-style: dotted;
+     border-color: blue;
+    }
 
-		p { 
-            font-weight: normal; 
-            color: blue; 
-        }
 
-        h1{ 
-            color: rgb(255, 17, 0);
-        }
-        h2{ 
-            color: rgb(137, 230, 8);
-        }
-        
+h1{ 
+    color: rgb(255, 17, 0);
+ }
+h2{ 
+        color: rgb(251, 255, 17);
+ }
+body{
+    font-family: 'Arial', sans-serif ;
+    list-style: 1.6;
+    color: rgb(5, 64, 37);
+    background-color: rgb(132, 9, 233);
+}    
