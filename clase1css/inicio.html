@@ -9,8 +9,8 @@
 </head>
 <body style="margin: 0; padding: 0;">
     <header>
-        <nav>
-            <ul style="display: flex; list-style: none; justify-content: space-around;">
+        <nav style="top: 0; width: 100%; height: 60px; position: fixed; background-color:rgb(21, 187, 228);">
+            <ul>
                 <li><a href="#title">Inicio</a></li>
                 <li><a href="#skills">Habilidades</a></li>
                 <li><a href="#learning">Información</a></li>
@@ -20,26 +20,37 @@
     <main style="padding-top: 65px"> 
     <h1 id="title">Curso Html-CSS-Javascript</h1>
     </main>
+    <div id="modelo">
+        <figure>
+            <a target="_blank" href="https://es.wikipedia.org/wiki/HTML"><img  src="html5-.png" alt="logo html" width="150px" height="auto"></a>
+            <figcaption>HMTL</figcaption>
+        </figure>
+        <figure>
+            <a target="_blank" href="https://es.wikipedia.org/wiki/CSS"> <img src="css.png" alt="logo css" width="150px" height="auto"></a>
+            <figcaption>CSS</figcaption>
+        </figure>
+        <figure>
+            <a target="_blank" href="https://es.wikipedia.org/wiki/JavaScript"> <img src="java.jpg" alt="logo javascript" width="150px" height="auto"></a>
+                <figcaption>JAVASCRIPT</figcaption>
+        </figure>
+    </div>
+
     <article>
 
     <p>Curso enfocado a principiantes del desarrollo web</p>
 
     <a href="h1.pdf" upload="Cronograma">Visualizar acá el temario detallado</a>
     </article>
-    <h3 id="skills">Habilidades que se aprenderán</h3>
-    <ul>
+    <h4>Habilidades que se aprenderán</h4>
+    <ol>
         <li>Creación básica de un sitio web</li>
         <p>Ejemplos de hojas de Estilo</p>
 
         <li>Diseño básico</li>
         <li>Elementos javascript</li>
-    </ul>
-    <h3 id="learning">Temario</h3>
-    <ol>
-        <li>HTML</li> <a target="_blank" href="https://es.wikipedia.org/wiki/HTML"><img src="html5-.png" alt="logo html" width="150px" height="auto"></a> 
-        <li>CSS</li> <a target="_blank" href="https://es.wikipedia.org/wiki/CSS"> <img src="css.png" alt="logo css" width="150px" height="auto"></a>
-        <li>JavaScript</li> <a target="_blank" href="https://es.wikipedia.org/wiki/JavaScript"> <img src="java.jpg" alt="logo javascript" width="150px" height="auto"></a>
     </ol>
+    <h3 id="learning">Temario</h3>
+    
     <footer style="background-color: rgba(187, 183, 157, 0.566); border: 2px, solid, black; padding: 20px;">
         <form action="">
             <h2>¡Quiero información del curso!</h2>
@@ -47,7 +58,7 @@
             <br>
             <input class="inputs" type="email" name="correo" placeholder="ejemplo@outlook.com" required >
             <br>
-            <input id="inputbuttom" type="submit" value="Enviar">            
+            <input id="inputbutton" type="submit" value="Enviar">            
         </form>    
     <a href="/">Página principal</a>
     </footer>

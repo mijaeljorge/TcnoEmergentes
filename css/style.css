@@ -1,0 +1,363 @@
+/* ============================================
+   PASO 3: SELECTOR UNIVERSAL
+   (reset básico + box-sizing)
+   ============================================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* PASO 4 */
+}
+
+/* ============================================
+   PASO 5: TIPOGRAFÍA BASE
+   ============================================ */
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  font-size: 16px;          /* base */
+  line-height: 1.6;
+  font-weight: 400;
+  background: #f4f4f4;
+  color: #222;
+  padding-bottom: 70px;     /* espacio para footer fijo */
+}
+
+/* ============================================
+   PASO 3: SELECTOR DE ETIQUETA
+   ============================================ */
+p {
+  color: gray;
+}
+
+section {
+  background: white;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+h2 {
+  color: #2c3e50;
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+}
+
+/* ============================================
+   PASO 1: FORMAS DE APLICAR CSS (estilos de apoyo)
+   ============================================ */
+.css-interno {
+  color: blue;
+  font-size: 18px;
+}
+
+.css-externo {
+  color: green;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* ============================================
+   PASO 3: SELECTORES
+   ============================================ */
+
+/* Selector de clase */
+.destacado {
+  background-color: yellow;
+  font-weight: bold;
+  padding: 8px;
+  border-left: 4px solid #f39c12;
+}
+
+/* Selector de ID */
+#titulo {
+  color: white;
+}
+
+#subtitulo {
+  color: darkblue;
+}
+
+/* Selector descendiente */
+nav a {
+  color: white;
+  margin-left: 15px;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+/* Selector hijo directo */
+ul > li {
+  list-style: square;
+}
+
+/* Pseudo-clase :hover */
+a:hover {
+  color: orange;
+}
+
+.enlace-hover {
+  display: inline-block;
+  margin-top: 10px;
+  color: #3498db;
+  font-weight: bold;
+}
+
+/* ============================================
+   PASO 4: BOX MODEL
+   ============================================ */
+.caja {
+  width: 200px;
+  height: 100px;
+  padding: 20px;
+  border: 2px solid #000;
+  margin: 15px;
+  box-sizing: border-box;
+  background: #4CAF50;
+  color: white;
+  border-radius: 6px;
+}
+
+/* ============================================
+   PASO 5: COLORES
+   ============================================ */
+.texto {
+  color: #ffffff;
+  background-color: #e74c3c; /* hexadecimal */
+  padding: 10px;
+  border-radius: 6px;
+  border: 3px solid hsl(120, 50%, 50%); /* hsl */
+}
+
+.texto-rgb {
+  background-color: rgb(52, 152, 219); /* rgb */
+  color: white;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.texto-hsl {
+  border: 3px solid hsl(120, 50%, 50%);
+  padding: 10px;
+  border-radius: 6px;
+  color: #222;
+}
+
+/* ============================================
+   PASO 6: FLEXBOX
+   ============================================ */
+.contenedor-flex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+  height: 200px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  padding: 10px;
+  flex-wrap: wrap; /* salta de línea si no cabe (responsive) */
+}
+
+.item-flex {
+  background-color: #3498db;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* ============================================
+   PASO 7: GRID
+   ============================================ */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.grid div {
+  background-color: #9b59b6;
+  color: white;
+  padding: 30px;
+  text-align: center;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+/* ============================================
+   PASO 8: POSICIONAMIENTO
+   ============================================ */
+.header-fijo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background: #2c3e50;
+  color: white;
+  padding: 12px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+main {
+  padding-top: 80px;
+}
+
+.caja-pos {
+  display: inline-block;
+  padding: 12px 20px;
+  background: #16a085;
+  color: white;
+  border-radius: 6px;
+  margin: 5px;
+}
+
+.estatico {
+  position: static;
+}
+
+.relativo {
+  position: relative;
+  top: 10px;
+  left: 20px;
+  background: #f39c12;
+}
+
+.contenedor-relativo {
+  position: relative;
+  height: 150px;
+  background: #ecf0f1;
+  border: 2px dashed #7f8c8d;
+  padding: 10px;
+  border-radius: 8px;
+  color: #7f8c8d;
+  margin: 10px 0;
+}
+
+.absoluto {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #e74c3c;
+  margin: 0;
+}
+
+.pegajoso {
+  position: sticky;
+  top: 0;
+  background: #8e44ad;
+  z-index: 500;
+  display: block;
+  width: fit-content;
+}
+
+.relleno {
+  height: 200px;
+  background: #fafafa;
+  border-bottom: 1px dashed #ccc;
+  color: #999;
+  padding: 10px;
+}
+
+footer.fijo {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  z-index: 1000;
+}
+
+/* ============================================
+   PASO 9: TRANSICIONES
+   ============================================ */
+.boton {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.boton:hover {
+  background-color: #2980b9;
+  transform: scale(1.05);
+}
+
+/* ============================================
+   PASO 9: ANIMACIÓN @keyframes
+   ============================================ */
+@keyframes aparecer {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.entrada {
+  animation: aparecer 0.8s ease forwards;
+  margin-top: 15px;
+  background: #2ecc71;
+  color: white;
+  padding: 12px;
+  border-radius: 6px;
+}
+
+/* ============================================
+   PASO 10: RESPONSIVE — MOBILE FIRST
+   Estilos base = móvil
+   ============================================ */
+.texto-responsive {
+  font-size: 14px;
+  background: #fdebd0;
+  padding: 10px;
+  border-radius: 6px;
+  color: #222;
+}
+
+/* Tablets en adelante */
+@media (min-width: 768px) {
+  .texto-responsive {
+    font-size: 16px;
+    background: #d5f5e3;
+  }
+
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Escritorio */
+@media (min-width: 1024px) {
+  .texto-responsive {
+    font-size: 18px;
+    background: #d6eaf8;
+  }
+}
+
+/* Móvil: grid a 1 columna (mobile first) */
+@media (max-width: 767px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .header-fijo {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 5px 10px 0 0;
+  }
+
+  main {
+    padding-top: 120px; /* más espacio por header alto en móvil */
+  }
+}
